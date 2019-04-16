@@ -1,1 +1,1 @@
-A collection of ServiceNow Utility Backgroudn Scripts 
+A collection of ServiceNow Utility Background Scripts 
