@@ -1,3 +1,4 @@
+// Taken from https://stackoverflow.com/questions/8847766/how-to-convert-json-to-csv-format-and-store-in-a-variable
 function json2csv(jsonArr) {
   var json = jsonArr;
   var fields = Object.keys(json[0]);
@@ -14,10 +15,6 @@ function json2csv(jsonArr) {
   csv.unshift(fields.join(",")); // add header column
 
   return csv.join("\r\n");
-  // var csv = "";
-  // var headers = Object.keys(jsonArr[0]);
-  // csv += headers.join(",") + "\n";
-  // return csv;
 }
 
 var caseObjects = [];
@@ -47,4 +44,4 @@ while (hrcase.next()) {
   }
 }
 var csvfile = json2csv(caseObjects);
-csvfile;
+csvfile; //For xplore output
